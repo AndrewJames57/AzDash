@@ -24,7 +24,7 @@ namespace AzureDashboard
 
         public static void ServiceBusList(SubscriptionCloudCredentials credentials)
         {
-            ServiceBusManagementClient sbMangeClient;
+            //ServiceBusManagementClient sbMangeClient;
         }
     }
 }
