@@ -16,19 +16,21 @@ namespace AzureDashboard
         private static void Main(string[] args)
         {
             log.Info("Start Application");
-            if (Menus.Main1() == "1")
-            {
-                ProcessInfo.ProcessFlag = "Home";
-                log.Info("Selected Presonal");
-            }
-            else
-            {
-                ProcessInfo.ProcessFlag = "Work";
-                log.Info("Selected Work");
-            }
             string exit = "";
             do
             {
+                Console.Clear();
+                if (Menus.Main1() == "1")
+                {
+                    ProcessInfo.ProcessFlag = "Home";
+                    log.Info("Selected Presonal");
+                }
+                else
+                {
+                    ProcessInfo.ProcessFlag = "Work";
+                    log.Info("Selected Work");
+                }
+
                 if (Menus.Main2() != "2")
                 {
                     log.Info("Selected Azure Reader");
@@ -38,7 +40,8 @@ namespace AzureDashboard
                 }
                 Console.WriteLine("Enter X to exit");
                 exit = Console.ReadLine();
-            } while (exit != "x");
+            }
+            while (exit != "x");
 
             log.Info("Stop Application - Press Enter");
             Console.ReadLine();
