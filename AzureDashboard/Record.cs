@@ -76,7 +76,7 @@ namespace AzureDashboard
                 log.Trace("Affinity Group:  " + item.Properties.AffinityGroup);
                 log.Trace("Georeplication:  " + item.Properties.GeoReplicationEnabled);
                 log.Trace("Description:     " + item.Properties.Description);
-                var x = item.Properties.
+                
                 
                 log.Trace("___________________________________________________");
             }
