@@ -58,15 +58,15 @@ namespace AzureDashboard
 
         public static string SubSelect(IEnumerable<SubscriptionListOperationResponse.Subscription> subscriptions)
         {
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine("");
             Console.WriteLine("             Subscriptions Avaialble ");
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             foreach (var subby in subscriptions)
             {
                 Console.WriteLine(subby.SubscriptionName + "  " + subby.SubscriptionStatus);
             }
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine();
             Console.Write("Enter Subscription name (Default is Premium): ");
 
@@ -81,86 +81,86 @@ namespace AzureDashboard
         public static void AffinityDisplay(AffinityGroupListResponse groups)
         {
             {
-                Console.WriteLine("___________________________________________________");
+                Console.WriteLine(dividerLine);
                 Console.WriteLine("");
                 Console.WriteLine("             Affinity Groups ");
-                Console.WriteLine("___________________________________________________");
+                Console.WriteLine(dividerLine);
                 foreach (var item in groups)
                 {
                     Console.WriteLine(item.Name);
                 }
-                Console.WriteLine("___________________________________________________");
+                Console.WriteLine(dividerLine);
                 Console.WriteLine();
             }
         }
 
         public static void CloudServiceDisplay(HostedServiceListResponse serviceList)
         {
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine(" ");
             Console.WriteLine("             Cloud Services ");
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             foreach (var item in serviceList)
             {
                 Console.WriteLine(item.ServiceName);
             }
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine();
         }
 
         public static void StorageAccountDisplay(StorageAccountListResponse storageList)
         {
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine(" ");
             Console.WriteLine("             Storage Accounts ");
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             foreach (var item in storageList)
             {
                 Console.WriteLine(item.Name);
             }
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine();
         }
 
         public static void VHDDisplay()
         {
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine(" ");
             Console.WriteLine("             Virtual Machines");
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             //foreach (var item in SqlServerList)
             //{
             //    Console.WriteLine(item.Name);
             //}
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine();
         }
 
         public static void SqlServerDisplay(ServerListResponse SqlServerList)
         {
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine(" ");
             Console.WriteLine("             SQL Servers ");
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             foreach (var item in SqlServerList)
             {
                 Console.WriteLine(item.Name);
             }
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine();
         }
 
         public static void SqlDatabasesDisplay(DatabaseListResponse SqlDatabaseList, string sqlServerName)
         {
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine(" ");
             Console.WriteLine("    SQL Server " + sqlServerName + " databases");
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             foreach (var item in SqlDatabaseList)
             {
                 Console.WriteLine(item.Name);
             }
-            Console.WriteLine("___________________________________________________");
+            Console.WriteLine(dividerLine);
             Console.WriteLine();
         }
     }
